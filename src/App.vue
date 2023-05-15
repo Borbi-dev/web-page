@@ -1,9 +1,7 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <Navigation :content="nav" v-if="!isLoading"/>
   <router-view />
+  <Footer :footer="footer" v-if="!isLoading"/>
 </template>
 
 <style lang="scss">
@@ -28,3 +26,46 @@ nav {
   }
 }
 </style>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import $store from '@/store';
+import Navigation from '@/components/Navigation/index.vue';
+import Footer from '@/components/Footer/index.vue';
+
+export default defineComponent({
+  name: "App",
+  data() {
+    return {
+      nav: {},
+      main: {},
+      footer: {},
+      isLoading: true
+    }
+  },
+  components: {
+    Navigation,
+    Footer
+  },
+  methods: {
+    async fetch(link: String)
+    {
+      const response = await $store.dispatch({
+      type: 'fetch',
+      link: link
+      });
+
+      return response;
+    }
+  },
+  async created() {
+    this.nav = await this.fetch('/api/naviagtion')
+    this.nav = this.nav.data.attributes
+    this.footer = await this.fetch('/api/footer')
+    this.footer = this.footer.data.attributes
+
+
+    this.isLoading = false
+  }
+});
+</script>
