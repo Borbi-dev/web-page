@@ -1,10 +1,10 @@
 <template>
     <header>
         <img :src="logoImgUrl"/>
-        <h1>{{ content.Name }}</h1>
+        <h1>{{ content.name }}</h1>
 
         <nav>
-            <NavLink :content="navLink" v-bind:key="navLink.id" v-for="navLink in content.NavLink"/>
+            <NavLink :content="navLink" v-bind:key="navLink.id" v-for="navLink in content.navLink"/>
         </nav>
     </header>
 </template>
@@ -32,7 +32,7 @@ export default defineComponent({
     NavLink
   },
   created() {
-    this.logoImgUrl = $store.state.url + this.content.Logo.data.attributes.url
+    this.logoImgUrl = $store.state.url + this.content.logo.data.attributes.url
   }
 });
 </script>

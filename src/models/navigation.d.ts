@@ -1,6 +1,6 @@
 export interface INavigation {
-    Name: string,
-    Logo: {
+    name: string,
+    logo: {
         data: {
             attributes: {
                 id: number,
@@ -8,7 +8,7 @@ export interface INavigation {
             }
         }
     },
-    NavLink: NavLink[]
+    navLink: NavLink[]
 }
 
 export interface NavLink {

@@ -31,7 +31,7 @@ export default defineComponent({
     }
   },
   async created() {
-    let content = await this.fetch('/api/home-page')
+    const content = await this.fetch('/api/homepage')
     this.homePage = content.data.attributes
     
     this.isLoading = false;

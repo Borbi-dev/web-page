@@ -1,9 +1,9 @@
 export interface IFooter {
-    FooterElements: IFooterSection[]
+    footerElements: IFooterSection[]
 };
 
 export interface IFooterSection {
     id: number,
-    Title: string,
-    Description: string
+    title: string,
+    description: string
 };

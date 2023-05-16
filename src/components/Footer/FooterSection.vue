@@ -1,7 +1,7 @@
 <template>
     <section>
-        <h2> {{ section.Title }}</h2>
-        <p> {{ section.Description }}</p>
+        <h2> {{ section.title }}</h2>
+        <p> {{ section.description }}</p>
     </section>
 </template>
 

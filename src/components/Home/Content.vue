@@ -1,5 +1,5 @@
 <template>
-    <p>{{ content.ContentText }}</p>
+    <p>{{ content.contentText }}</p>
 </template>
 
 <script lang="ts">
