@@ -1,6 +1,6 @@
 <template>
     <VideoElement :url="videoUrl"/>
-    <Content :content="content" v-bind:key="content.id" v-for="content in content.Content"/>
+    <Content :content="content" v-bind:key="content.id" v-for="content in content.content"/>
 </template>
 
 <script lang="ts">
@@ -29,7 +29,7 @@ export default defineComponent({
     }
   },    
   created() {
-    this.videoUrl = $store.state.url + this.content.TrailerVideo.data?.attributes.url
+    this.videoUrl = $store.state.url + this.content.trailerVideo.data?.attributes.url
   }
 });
 </script>

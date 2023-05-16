@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <FooterSection :section="section" v-bind:key="section.id" v-for="section in footer.FooterElements"/>
+        <FooterSection :section="section" v-bind:key="section.id" v-for="section in footer.footerElements"/>
     </footer>
 </template>
 

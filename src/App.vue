@@ -59,10 +59,10 @@ export default defineComponent({
     }
   },
   async created() {
-    this.nav = await this.fetch('/api/naviagtion')
-    this.nav = this.nav.data.attributes
-    this.footer = await this.fetch('/api/footer')
-    this.footer = this.footer.data.attributes
+    const fetchNav = await this.fetch('/api/navigation')
+    this.nav = fetchNav.data.attributes
+    const fetchFooter = await this.fetch('/api/footer')
+    this.footer = fetchFooter.data.attributes
 
 
     this.isLoading = false

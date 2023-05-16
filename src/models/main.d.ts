@@ -1,6 +1,6 @@
 export interface IMain {
-    TrailerVideo: ITrailerVideo,
-    Content: IContent[]
+    trailerVideo: ITrailerVideo,
+    content: IContent[]
 }
 
 export interface ITrailerVideo {
@@ -14,6 +14,6 @@ export interface ITrailerVideo {
 
 export interface IContent {
     id: number,
-    ContentImage?: string
-    ContentText: string
+    contentImage?: string
+    contentText: string
 }
