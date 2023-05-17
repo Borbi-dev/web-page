@@ -1,0 +1,123 @@
+{
+    "navigation?populate=*": {
+        "data": {
+            "id": 1,
+            "attributes": {
+                "name": "SCP: Lights Out",
+                "createdAt": "2023-05-16T08:56:17.250Z",
+                "updatedAt": "2023-05-16T08:59:34.222Z",
+                "publishedAt": "2023-05-16T08:59:34.212Z",
+                "logo": {
+                    "data": {
+                        "id": 2,
+                        "attributes": {
+                            "name": "android-chrome-192x192.png",
+                            "alternativeText": null,
+                            "caption": null,
+                            "width": 192,
+                            "height": 192,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_android-chrome-192x192.png",
+                                    "hash": "thumbnail_android_chrome_192x192_fe52d6e794",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "path": null,
+                                    "width": 156,
+                                    "height": 156,
+                                    "size": 9.69,
+                                    "url": "/uploads/thumbnail_android_chrome_192x192_fe52d6e794.png"
+                                }
+                            },
+                            "hash": "android_chrome_192x192_fe52d6e794",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "size": 1.54,
+                            "url": "/uploads/android_chrome_192x192_fe52d6e794.png",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "createdAt": "2023-05-16T08:55:48.495Z",
+                            "updatedAt": "2023-05-16T08:55:48.495Z"
+                        }
+                    }
+                },
+                "navLink": [
+                    {
+                        "id": 1,
+                        "name": "Home",
+                        "route": "/"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Download",
+                        "route": "/download"
+                    },
+                    {
+                        "id": 3,
+                        "name": "News",
+                        "route": "/news"
+                    }
+                ]
+            }
+        },
+        "meta": {}
+    },
+    "homepage?populate=*": {
+        "data": {
+            "id": 1,
+            "attributes": {
+                "createdAt": "2023-05-16T08:57:36.953Z",
+                "updatedAt": "2023-05-16T08:59:32.368Z",
+                "publishedAt": "2023-05-16T08:59:32.359Z",
+                "trailerVideo": {
+                    "data": null
+                },
+                "content": [
+                    {
+                        "id": 1,
+                        "contentText": "<b>Hello World</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor et nisl vitae hendrerit. In purus nibh, accumsan consequat leo sed, ullamcorper rhoncus orci. Vestibulum eget vulputate tortor, et consectetur nisl. Aenean scelerisque orci non malesuada lacinia. Nullam tristique leo mauris, vitae aliquet lorem pretium eu. Phasellus lacinia augue sed commodo sollicitudin. Cras eget neque ornare, lacinia odio non, faucibus augue. Aliquam pulvinar sapien vel augue aliquet tempus. Duis aliquam enim eu malesuada blandit."
+                    },
+                    {
+                        "id": 2,
+                        "contentText": "<i>Second Paragraph</i>Integer malesuada metus ac pulvinar feugiat. Mauris eget dui magna. Proin nec lacinia nisl. Quisque vel pulvinar lacus. Curabitur ligula enim, porttitor in tellus sed, ultricies maximus elit. Vestibulum lobortis efficitur nibh, vitae placerat nisl pulvinar eget. Integer ut dolor id elit vehicula viverra porta et lectus. Nullam a dolor eu lorem pulvinar consequat vel eget orci. Donec id ligula nec ipsum volutpat convallis. Aenean blandit pulvinar commodo. In pulvinar dapibus dolor, vel pharetra orci sodales quis."
+                    }
+                ]
+            }
+        },
+        "meta": {}
+    },
+    "footer?populate=*": {
+        "data": {
+            "id": 1,
+            "attributes": {
+                "createdAt": "2023-05-16T08:59:06.631Z",
+                "updatedAt": "2023-05-16T08:59:30.325Z",
+                "publishedAt": "2023-05-16T08:59:30.316Z",
+                "footerElements": [
+                    {
+                        "id": 1,
+                        "title": "FAQ",
+                        "description": "Lorem Ipsum\nLorem Ipsum\nLorem Ipsum"
+                    },
+                    {
+                        "id": 2,
+                        "title": "About Us",
+                        "description": "Nam eu posuere ante. Integer vestibulum arcu nec dolor tempor, non rutrum sem ornare. Vestibulum at augue in elit interdum ornare. Maecenas venenatis aliquam nisl, at rhoncus leo congue sit amet. Suspendisse tempor ex vel laoreet convallis. Maecenas quis viverra metus"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Legal",
+                        "description": "Lorem ipsum\nLorem ipsum\nLorem ipsum"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Social Media",
+                        "description": "<b>Facebook</b>\n<b>Instagram</b>\n<b>TikTok</b>"
+                    }
+                ]
+            }
+        },
+        "meta": {}
+    }
+}
